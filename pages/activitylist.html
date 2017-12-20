@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>活动</title>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+  	<meta name="format-detection" content="telephone=no" />
+  	<script>
+    ;
+    (function(doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+      var recalc = function() {
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        var fontSize = 20 * (clientWidth / 375);
+        fontSize = (fontSize > 54) ? 54 : fontSize;
+        //如果是pc访问
+        if (!/windows phone|iphone|android|iPad/ig.test(window.navigator.userAgent)) {
+          fontSize = 20;
+        }
+        docEl.style.fontSize = fontSize + 'px';
+        var dpi = window.devicePixelRatio;
+        docEl.setAttribute('data-dpi', dpi);
+        var scale = 1 / dpi;
+      };
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      recalc();
+    })(document, window);
+  	</script>
+	<link rel="stylesheet" type="text/css" href="../assets/css/awesome/font-awesome.css"></link>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body>
+<div>
+
+  <div class="activity-list">
+    <div class="list-item">
+      <div class="item-main">
+        <img src="../assets/img/activity-pic.jpeg">
+        <div class="item-title">
+         <div class="title">篮球赛001</div>
+        </div>
+      </div>
+      <div class="item-info">
+        活动简介:关于举办学院杯篮球比赛事宜，工商学院xx关于举办学院杯篮球比赛事宜，工商学院xx
+      </div>
+    </div>
+    <div class="list-item">
+      <div class="item-main">
+        <img src="../assets/img/activity-pic1.jpeg">
+        <div class="item-title">
+         <div class="title">篮球赛002</div>
+        </div>
+      </div>
+      <div class="item-info">
+        活动简介:关于举办学院杯篮球比赛事宜，工商学院xx...
+      </div>
+    </div>
+    <div class="list-item">
+      <div class="item-main">
+        <img src="../assets/img/activity-pic2.jpeg">
+        <div class="item-title">
+         <div class="title">篮球赛003</div>
+        </div>
+      </div>
+      <div class="item-info">
+        活动简介:关于举办学院杯篮球比赛事宜，工商学院xx...
+      </div>
+    </div>
+
+  </div>
+
+	
+	<div class="main-menu">
+		<div class="">
+			<i class="fa fa-vcard-o"></i>
+			<div>组织</div>
+		</div>
+		<div class="active">
+			<i class="fa fa-rss"></i>
+			<div>活动</div>
+		</div>
+		<div class="">
+			<i class="fa fa-user-o"></i>
+			<div>我的</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

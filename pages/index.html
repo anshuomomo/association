@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>社团组织</title>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+  	<meta name="format-detection" content="telephone=no" />
+  	<script>
+    ;
+    (function(doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+      var recalc = function() {
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        var fontSize = 20 * (clientWidth / 375);
+        fontSize = (fontSize > 54) ? 54 : fontSize;
+        //如果是pc访问
+        if (!/windows phone|iphone|android|iPad/ig.test(window.navigator.userAgent)) {
+          fontSize = 20;
+        }
+        docEl.style.fontSize = fontSize + 'px';
+        var dpi = window.devicePixelRatio;
+        docEl.setAttribute('data-dpi', dpi);
+        var scale = 1 / dpi;
+      };
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      recalc();
+    })(document, window);
+  	</script>
+	<link rel="stylesheet" type="text/css" href="../assets/css/awesome/font-awesome.css"></link>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body>
+<div>
+
+  <div class="action-group">
+    <div class="jion-btn">
+      <div class="action-icon"><i class="fa fa-user-plus"></i></div>
+      <span>创建组织</span>
+    </div>
+    <div class="jion-btn">
+      <div class="action-cion"><i class="fa fa-search-plus"></i></div>
+      <span>加入组织</span>
+    </div>
+  </div>
+
+	
+	<div class="main-menu">
+		<div class="active">
+			<i class="fa fa-vcard-o"></i>
+			<div>组织</div>
+		</div>
+		<div>
+			<i class="fa fa-rss"></i>
+			<div>活动</div>
+		</div>
+		<div class="">
+			<i class="fa fa-user-o"></i>
+			<div>我的</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
