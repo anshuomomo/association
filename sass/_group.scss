@@ -1,0 +1,18 @@
+.action-group {
+	margin-top:4rem;
+	.jion-btn {
+		background:#ffffff;
+		width:7rem;
+		margin:0.3rem auto;
+		padding:2rem 4rem;
+		text-align:center;
+		border:1px solid $borderColor;
+		color: $ftColor;
+		font-size:0.8rem;
+		line-height: 1.5rem;
+		i {
+			color: $prmColor;
+			font-size: 2rem;
+		}
+	}
+}

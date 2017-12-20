@@ -1,0 +1,22 @@
+.main-menu {
+	width:100%;
+	position:fixed;
+	bottom:0;
+	height:2rem;
+	border-top:1px solid $borderColor;
+	text-align:center;
+	color:$ftColor;
+	font-size:0.4rem;
+	background:#ffffff;
+	&>div {
+		margin-top:0.3rem;
+		float: left;
+		width: 33.2%;
+		i {
+			font-size: 1rem;
+		}
+		&.active{
+			color: $prmColor;
+		}
+	}
+}
